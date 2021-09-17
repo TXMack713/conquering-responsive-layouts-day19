@@ -1,5 +1,6 @@
 html {
   min-block-size: 100%;
+  inline-size: 100vw;
 }
 
 body {
@@ -79,11 +80,14 @@ header > .container {
 }
 
 .nav {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   border: 2px solid black;
   inline-size: 100%;
+  text-align: center;
   /* color: white; */
 }
 
@@ -97,12 +101,13 @@ header > .container {
 }
 
 .nav__list {
-  /* padding: 0 3rem; */
+  padding: 0 3rem;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   line-height: 3rem;
+  /* list-style-position: inside; */
 }
 
 .nav-toggle {
@@ -162,11 +167,13 @@ header > .container {
 .nav {
   visibility: hidden;
   block-size: 0;
-  position: absolute;
+  position: relative;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .nav--visible {
