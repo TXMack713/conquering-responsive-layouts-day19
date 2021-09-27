@@ -89,6 +89,8 @@ header > .container {
   border: 2px solid black;
   inline-size: 100%;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
   /* color: white; */
 }
 
@@ -109,6 +111,13 @@ header > .container {
   align-items: center;
   line-height: 3rem;
   /* list-style-position: inside; */
+}
+
+.nav__link--button {
+  background-color: white;
+  border-radius: 2rem;
+  padding: 0.5rem 0.625rem;
+  color: #136c72;
 }
 
 .nav-toggle {
