@@ -207,8 +207,6 @@ header > .container {
   padding: 100px 0;
   background-color: #23424a;
   color: #fff;
-  /* display: flex;
-  flex-flow: row nowrap; */
 }
 
 .hero__img {
