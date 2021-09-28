@@ -207,8 +207,8 @@ header > .container {
   padding: 100px 0;
   background-color: #23424a;
   color: #fff;
-  display: flex;
-  flex-flow: row nowrap;
+  /* display: flex;
+  flex-flow: row nowrap; */
 }
 
 .hero__img {
@@ -236,11 +236,11 @@ header > .container {
     display: none;
   }
 
-  .hero > .row {
+  .hero > .container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-content: center;
   }
 
   .nav {
@@ -254,12 +254,11 @@ header > .container {
   }
 
   .hero__text {
-    inline-size: 62%;
+    /* inline-size: 62%; */
   }
 
   .hero__img {
-    inline-size: 32%;
-    align-self: flex-start;
+    /* inline-size: 32%; */
     margin: 0;
   }
 
