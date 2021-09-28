@@ -258,7 +258,8 @@ header > .container {
   }
 
   .hero__img {
-    inline-size: 32%;
+    max-inline-size: 32%;
+    align-self: center;
     margin: 0;
   }
 
