@@ -241,11 +241,10 @@ header > .container {
   .nav {
     visibility: visible;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     align-content: center;
-    inline-size: 100%;
-    /* border: 2px solid black; */
+    inline-size: 100vw;
   }
 
   .nav--visible {
@@ -256,7 +255,7 @@ header > .container {
     top: 3.125rem;
     position: absolute;
     background-color: #136c72;
-    max-inline-size: 100%;
+    max-inline-size: 100vw;
   }
 
   .nav__list {
