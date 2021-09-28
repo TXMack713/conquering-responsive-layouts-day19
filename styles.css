@@ -63,6 +63,8 @@ h1 {
   margin: 0 auto;
   /* added for nav-toggle positioning */
   position: relative;
+  /* display: flex;
+  flex-flow: column nowrap; */
 }
 
 header {
@@ -86,7 +88,6 @@ header > .container {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid black;
   inline-size: 100%;
   text-align: center;
   text-transform: uppercase;
@@ -191,7 +192,11 @@ header > .container {
   visibility: visible;
   block-size: auto;
   opacity: 1;
-  /* position: sticky; */
+  z-index: 1;
+  top: 3.125rem;
+  position: absolute;
+  background-color: #136c72;
+  inline-size: 100vw;
 }
 
 .logo {
@@ -202,10 +207,13 @@ header > .container {
   padding: 100px 0;
   background-color: #23424a;
   color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .hero__img {
   margin-top: 2em;
+  max-inline-size: 100%;
 }
 
 .hero p {
@@ -226,6 +234,13 @@ header > .container {
 @media (min-inline-size: 800px) {
   .nav-toggle {
     display: none;
+  }
+
+  .hero > .row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav {
