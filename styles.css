@@ -146,6 +146,7 @@ header > .container {
 .hamburger {
   inline-size: 50%;
   position: relative;
+  z-index: 2;
 }
 
 .hamburger,
@@ -230,10 +231,6 @@ header > .container {
 }
 
 @media (min-width: 800px) {
-  .nav-toggle {
-    display: none;
-  }
-
   .hero > .container {
     display: flex;
     flex-flow: row nowrap;
