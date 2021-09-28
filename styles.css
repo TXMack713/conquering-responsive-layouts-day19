@@ -241,6 +241,29 @@ header > .container {
   .nav {
     visibility: visible;
     display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+    inline-size: 100%;
+    /* border: 2px solid black; */
+  }
+
+  .nav--visible {
+    visibility: visible;
+    block-size: auto;
+    opacity: 1;
+    z-index: 1;
+    top: 3.125rem;
+    position: absolute;
+    background-color: #136c72;
+    max-inline-size: 100%;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-content: center;
   }
 
   .row {
